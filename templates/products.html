@@ -1,0 +1,24 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+{#using the data written in the products function inside views.py using JINJA templating language (basically python inside html)#}
+    <h3>Full name is {{ name }}</h3>
+    <p>{{ age }} years old</p>
+    <p>{{ weight }} kgs</p>
+
+    {% for sub in subjects %}
+        <p>{{ sub }}</p>
+    {% endfor %}
+
+    {% if isDisabled %}
+        <p>Has Disability</p>
+    {% else %}
+        <P>Not disabled</P>
+    {% endif %}
+</div>
+{% endblock %}

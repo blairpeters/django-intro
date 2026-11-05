@@ -2,3 +2,7 @@
     color: chocolate;
     font-weight: 900;
 }
+/*note:the chhange of the bootstrap css might require a force reload on browser using ctrl + shift + R done on browser in order to change to that styling since css is cached sometimes */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: cadetblue;
+}
